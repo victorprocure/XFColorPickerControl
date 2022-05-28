@@ -6,7 +6,7 @@
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:xfColorPickerControl="clr-namespace:Udara.Plugin.XFColorPickerControl;assembly=Udara.Plugin.XFColorPickerControl"
+    xmlns:xfColorPickerControl="http://github.com/UdaraAlwis"
     ios:Page.UseSafeArea="true"
     mc:Ignorable="d">
 

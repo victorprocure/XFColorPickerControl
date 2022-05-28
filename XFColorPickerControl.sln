@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29806.167
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFColorPickerControl.UWP", "XFColorPickerControl\XFColorPickerControl.UWP\XFColorPickerControl.UWP.csproj", "{AC8F9B59-08AE-450C-9872-857E469264CC}"
 EndProject
@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFColorPickerControl.Androi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFColorPickerControl.iOS", "XFColorPickerControl\XFColorPickerControl.iOS\XFColorPickerControl.iOS.csproj", "{DA93E355-B257-45F0-BBC4-E81765CAF442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XFColorPickerControl", "XFColorPickerControl\XFColorPickerControl\XFColorPickerControl.csproj", "{F5AEE682-1531-45A9-9C08-A124F9C45F58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XFColorPickerControl", "XFColorPickerControl\XFColorPickerControl\XFColorPickerControl.csproj", "{F5AEE682-1531-45A9-9C08-A124F9C45F58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Udara.Plugin.XFColorPickerControl", "Nuget\Udara.Plugin.XFColorPickerControl\Udara.Plugin.XFColorPickerControl.csproj", "{9922636C-D69A-49B8-9A69-6862BD4578D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,30 @@ Global
 		{F5AEE682-1531-45A9-9C08-A124F9C45F58}.Release|x86.ActiveCfg = Release|Any CPU
 		{F5AEE682-1531-45A9-9C08-A124F9C45F58}.Release|x86.Build.0 = Release|Any CPU
 		{F5AEE682-1531-45A9-9C08-A124F9C45F58}.Release|x86.Deploy.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|ARM.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Debug|x86.Build.0 = Debug|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|ARM.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|ARM.Build.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|iPhone.Build.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|x64.Build.0 = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{9922636C-D69A-49B8-9A69-6862BD4578D7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

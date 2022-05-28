@@ -3,11 +3,12 @@
     x:Class="XFColorPickerControl.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:controls="clr-namespace:XFColorPickerControl.Controls;assembly=XFColorPickerControl"
+    xmlns:controls="http://github.com/UdaraAlwis"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:views="clr-namespace:XFColorPickerControl"
     ios:Page.UseSafeArea="true"
+    x:DataType="views:MainPageViewModel"
     mc:Ignorable="d">
 
     <Grid Padding="20">
@@ -39,7 +40,7 @@
             VerticalOptions="Center">
             <Frame
                 x:Name="SelectedColorDisplayFrame"
-                BackgroundColor="White"
+                BackgroundColor="{Binding PickColor, Mode=OneWay}"
                 CornerRadius="8"
                 HeightRequest="70"
                 HorizontalOptions="Center"
@@ -49,8 +50,8 @@
                     FontAttributes="Bold"
                     FontSize="Title"
                     HorizontalTextAlignment="Center"
-                    Text="#COLOR"
-                    TextColor="SlateGray"
+                    Text="{Binding ColorHex, Mode=OneWay}"
+                    TextColor="{Binding FaceColor, Mode=OneWay}"
                     VerticalTextAlignment="Center" />
             </Frame>
             <Frame
@@ -58,15 +59,18 @@
                 CornerRadius="8"
                 HeightRequest="200"
                 HorizontalOptions="Center"
+                BackgroundColor="{Binding PickColor, Mode=OneWay}"
                 WidthRequest="350">
                 <controls:ColorPicker
                     x:Name="ColorPicker"
-                    ColorListDirection="Horizontal"
-                    GradientColorStyle="DarkToColorsToLightStyle"
-                    PickedColorChanged="ColorPicker_PickedColorChanged"
-                    PointerCircleBorderUnits="0.3"
-                    PointerCircleDiameterUnits="0.7">
-                    <controls:ColorPicker.ColorList>
+                    PickedColor="{Binding PickColor}"
+                    ColorFlowDirection="Horizontal"
+                    ColorSpectrumStyle="TintToHueToShadeStyle"
+                    PointerRingBorderUnits="0.3"
+                    PointerRingDiameterUnits="0.7"
+                    PointerRingPositionXUnits="0.6"
+                    PointerRingPositionYUnits="0.6">
+                    <controls:ColorPicker.BaseColorList>
                         <x:Array Type="{x:Type x:String}">
                             <!--  Red  -->
                             <x:String>#ff0000</x:String>
@@ -83,7 +87,7 @@
                             <!--  Red  -->
                             <x:String>#ff0000</x:String>
                         </x:Array>
-                    </controls:ColorPicker.ColorList>
+                    </controls:ColorPicker.BaseColorList>
                 </controls:ColorPicker>
             </Frame>
         </StackLayout>

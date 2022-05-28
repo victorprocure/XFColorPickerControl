@@ -16,19 +16,7 @@ namespace XFColorPickerControl
         public MainPage()
         {
             InitializeComponent();
+			BindingContext = new MainPageViewModel();
         }
-
-		private void ColorPicker_PickedColorChanged(object sender, Color colorPicked)
-		{
-			// Use the selected color
-			SelectedColorDisplayFrame.BackgroundColor = colorPicked;
-			SelectedColorValueLabel.Text = colorPicked.ToHex();
-			ColorPickerHolderFrame.BackgroundColor = colorPicked;
-
-			if (colorPicked.Luminosity < 0.5)
-				SelectedColorValueLabel.TextColor = Xamarin.Forms.Color.White;
-			else
-				SelectedColorValueLabel.TextColor = Xamarin.Forms.Color.SlateGray;
-		}
 	}
 }
